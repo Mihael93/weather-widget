@@ -1,25 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import MyInput from './components/UI/input/MyInput';
+import MyButton from './components/UI/button/MyButton';
+import Loader from './components/UI/loader/Loader';
+import Widget from './components/Widget';
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+   return (
+      <div className="App">
+         <h3 className='title'>Title here</h3>
+         <div className='title-wrapper'>
+            <MyInput />
+            <MyButton>Search</MyButton>
+         </div>
+         <Widget />
+         {/* <Loader /> */}
+      </div>
+   );
+};
 
 export default App;
